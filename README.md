@@ -43,4 +43,7 @@ for example, the following file is corrupted and it's close to PNG format. PNG f
 
 ![image](https://github.com/AbdullahZuhair21/Forensics/assets/154827329/f0ebe76d-cae7-4c19-81f5-fc3cf935ccae)
 
+# Log file 
+if you get a log file use Registry Viewer to check the Running application. don't forget to remove the null bytes in the case of copying a based64
 
+Software => Microsoft => Windows => Current Version => Run
