@@ -47,3 +47,6 @@ for example, the following file is corrupted and it's close to PNG format. PNG f
 if you get a log file use Registry Viewer to check the Running application. don't forget to remove the null bytes in the case of copying a based64
 
 Software => Microsoft => Windows => Current Version => Run
+
+# photo's forensics
+Hex is represented in hex-editor as little indian not big Indian. you can check the hex value of a number using python then `hex(150)`. use exiftool to get some of the values like image width and height
