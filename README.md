@@ -10,7 +10,7 @@ use the following:
 3. strings 
 4. binwalk (analysis tool)
 5. zsteg (detect hiding data in PNG & BMP)
-
+6. steghide (extract the text from a pic) `steghide extract -sf picture3.png`
 # PCAP file
 check `Statistics` tab > focus on Data > right click and apply filter > follow TCP/UDP packet
 
