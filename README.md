@@ -14,6 +14,12 @@ use the following:
 # PCAP file
 check `Statistics` tab > focus on Data > right click and apply filter > follow TCP/UDP packet
 
+always check DNS && HTTP from Statistics. Then use Tshark to extract the data
+```
+tshark -r <file.pcap> -T fields -e  <applied filter> -Y "<Conditions>"
+tshark -r shark2.pcap -T fields -e "dns.qry.name != ' ' && ip.dst == 18.217.1.57" | cut -d "." -f 1 | uniq | base64 -d
+```
+
 # wav file
 you need to convert it to image/audio then get the flag
 
@@ -50,3 +56,4 @@ Software => Microsoft => Windows => Current Version => Run
 
 # photo's forensics
 Hex is represented in hex-editor as little indian not big Indian. you can check the hex value of a number using python then `hex(150)`. use exiftool to get some of the values like image width and height
+
